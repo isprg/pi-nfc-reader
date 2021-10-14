@@ -9,7 +9,7 @@ ch.setFormatter(format)
 ch.setLevel(INFO)
 logger.addHandler(ch)
 
-NFC_READER_ID = "usb:054c:06c3" # Sony RC-S380は全てこのID.lsusbコマンドで確認可能.
+NFC_READER_ID = "usb:054c:06c3" # Sony RC-S380は全てこのID. lsusbコマンドで確認可能.
 
 try:
     def on_nfc_connect(tag):
