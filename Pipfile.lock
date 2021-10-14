@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "d0d1dc7b47ea6c771bce0f8bfdf69c2bdf5cb34696084c5488acf8f2f710765d"
+            "sha256": "3c180e0c32101283891beddd6033be8756e37cac4c9f88dc1d5f415e383992c0"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -45,6 +45,13 @@
                 "sha256:e2ab8e21d2b83e90d90dbfdcb6fb8ac0000b813238b7ecaede04f8435c389012"
             ],
             "version": "==2.0.1"
+        },
+        "pynfc": {
+            "hashes": [
+                "sha256:dca9a7aa364d6bbfa4dc56afb13993263eb41a32f087205601f748ee593a6cac"
+            ],
+            "index": "pypi",
+            "version": "==0.1.1"
         },
         "pyserial": {
             "hashes": [
