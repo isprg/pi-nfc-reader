@@ -16,7 +16,17 @@ class NFCReader:
 		finally:
 			clf.close()
 
+def get_serial():
+	serial_number = "0000000000000000"
+	with open("/proc/cpuinfo", "r") as f:
+		for line in f:
+			if line[0:6] == "Serial":
+				serial_number = line[10:26]
+	return serial_number
+
 if __name__ == "__main__":
+	serial_number = get_serial()
+	print(f"{serial_number=}")
 	client = NFCReader()
 	while True:
 		client.read()
